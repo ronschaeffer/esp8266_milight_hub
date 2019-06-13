@@ -274,7 +274,9 @@ irb(main):007:0> puts client.get.inspect
 
 ##### Customize fields
 
-You can select which fields should be included in state updates by configuring the `group_state_fields` parameter.  Available fields should be mostly self explanatory, with the possible exceptions of:
+You must select which fields should be included in state updates by configuring the `group_state_fields` parameter. The default is none.
+
+Available fields should be mostly self explanatory, with the possible exceptions of:
 
 1. `state` / `status` - same value with different keys (useful if your platform expects one or the other).
 1. `brightness` / `level` - [0, 255] and [0, 100] scales of the same value.
